@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+font-family: league spartan;
+}
+.container{
+    width:1200px;
+  margin-left:120px;
+  margin-top:100px;
+}
+.above-container,.cards-container{
+    display:flex;
+    flex-direction: row ;
+}
+.rate-one,.rate-two,.rate-three{
+    
+    background-color: #EEE;
+    width:350px;
+    height:30px;    
+    padding: 20px;
+    margin:25px;
+    border-radius: 5px;
+    text-align: center;
+    
+   
+}
+.ratings,.rate-two,.rate-three{
+    position: relative;
+
+}
+.ratings{
+    left:170px
+}
+.rate-two{
+    left:50px;
+}
+.rate-three{
+    left:100px;
+}
+.above-container p {
+    margin-top:30px;
+    font-family: league spartan;
+    font-size:1rem;
+    line-height: 1.6;
+    color:hsl(303, 10%, 53%);
+
+}
+h1{
+    font-size:3rem;
+    color:hsl(300, 43%, 22%);
+    font-weight: bold;
+}
+.cards-container{
+    margin-top: 100px;
+    column-gap: 30px;
+}
+.card-one,.card-two,.card-three{
+width:340px;
+height:250px;
+background-color: hsl(300, 43%, 22%);
+border-radius: 10px;
+
+}
+.image{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    position: relative;
+    left:30px;
+    top:40px;
+}
+#name,#verified{
+    position: relative;
+        left:90px;
+        bottom:10px;
+        padding:5px;
+}
+.card-content p{
+    margin-left:30px;
+    margin-right:35px;  
+    margin-top:20px;
+    font-family:1rem;
+    color:white;
+
+}
+#name{
+    color:white;
+}
+#verified{
+    color:hsl(333, 80%, 67%);
+}
+.card-two{
+    margin-top:20px;
+}
+.card-three{
+margin-top:40px;
+}
+
+@media only screen and (max-width:400px ){
+    .above-container,.cards-container{
+        display:flex;
+        flex-direction: column;
+    }
+
+   
+ .ratings{
+    position:static;
+ }
+ .rate-two,.rate-three,.rate-one{
+    position: unset;
+ }  
+    
+
+
+    
+    
+    
+}
